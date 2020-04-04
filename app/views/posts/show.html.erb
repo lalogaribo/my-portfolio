@@ -1,0 +1,6 @@
+<%= link_to 'All posts', posts_path, class: 'btn btn-info' %>
+<h1><%= @post.title %></h1>
+<p><%= @post.content %></p>
+
+<%= link_to 'All posts', posts_path, class: 'btn btn-secondary' %>
+<%= link_to 'Edit post', edit_post_path(@post), class: 'btn btn-secondary' %>

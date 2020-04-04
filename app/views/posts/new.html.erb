@@ -1,0 +1,17 @@
+<h1>Create a new Blog post</h1>
+<%= render 'error' %>
+<%= form_for @post do |f| %>
+  <div class="form-group">
+    <%= f.text_field :title, class: 'form-control', placeholder: 'Post title' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.text_area :description, class: 'form-control', placeholder: 'Enter description' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.rich_text_area :content%>
+  </div>
+
+  <%= f.submit 'Create Post', class: 'btn-primary' %>
+<% end %>
